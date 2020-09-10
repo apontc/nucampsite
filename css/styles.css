@@ -35,3 +35,35 @@ header h2 {
 .navbar {
     background-color: #901CAD ;
 }
+
+.tab-content {
+    border: 1px solid #DDD;
+    border-top: none;
+    padding: 10px;
+
+}
+
+/* My borders showing different div
+.col, div[class^="col-"] {
+    border: 1px solid red;
+    margin: 2px;
+    
+} 
+
+.row {
+    border: 3px solid blue;
+    padding: 2px;
+    margin: 5px;
+}
+
+.container {
+    border: 3px solid green;
+    padding: 2px;
+    margin: 5px;    
+}
+
+.media {
+    border: 3px solid yellow;
+    padding: 2px;
+    margin: 5px;       
+} 
