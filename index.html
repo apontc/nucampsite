@@ -6,14 +6,13 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     
-        <!-- Bootstrap CSS -->
+        <!-- build:css css/main.css -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    
-        <!-- Additional CSS must be placed after Bootstrap CSS -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-        <link rel="stylesheet" href="css/styles.css" />
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <!-- endbuild -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
 
 
         <title>NuCamp: A Better Way To Camp</title>
@@ -260,17 +259,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="row row-content align-items-center">
-            <div class="col-sm-6 mx-auto">
-                <div class="card">
-                    <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
-                    <div class="card-body">
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
 
     <!--Footer>-->
@@ -280,7 +268,8 @@
                 <div class="row">
                     <div class="col-4 col-sm-2 offset-1">
                         <h5>Links</h5>
-                        <ul class="list-unstyled">
+                        <ul class="list-uns
+                        tyled">
                             <li><a href="#">Home</a></li>
                             <li><a href="aboutus.html">About</a></li>
                             <li><a href="#">Sites</a></li>
@@ -302,36 +291,13 @@
             </div>
     </footer>
 
-    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <!--Can also be $(document).ready(function(){           
-        
-    });-->
-    <script>
-        $(function() {
-            $(".carousel").carousel( {interval: 2000} );
-            $("#carouselButton").click(function(){          //changed from $("#carouselPause").click(function(){//
-                if ($("#carouselButton").children("i").hasClass("fa-pause")) {           //$(".carousel").carousel("pause"); });//
-                $(".carousel").carousel("pause");
-                $("#carouselButton").children("i").removeClass("fa-pause");
-                $("#carouselButton").children("i").addClass("fa-play");
-                }
-                else {
-                $(".carousel").carousel("cycle");
-                $("#carouselButton").children("i").removeClass("fa-play");
-                $("#carouselButton").children("i").addClass("fa-pause");
-                }
-            });
-            // $("#carouselPlay").click(function(){
-            //     $(".carousel").carousel("cycle");
-            // });
-        });
-
-    </script>
-
+        <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+        <!-- build:js js/main.js -->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <!-- endbuild -->    
 </body>
 
 </html>
